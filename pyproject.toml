@@ -5,7 +5,7 @@ dependencies = [
 ]
 name = "ComfyUI-HYNode"
 description = "Includes a CSV parser."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 
 [project.urls]
