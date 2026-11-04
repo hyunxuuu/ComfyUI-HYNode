@@ -1,17 +1,16 @@
 [project]
 
-dependencies = []
+dependencies = [
+    "aiohttp"
+]
 name = "ComfyUI-HYNode"
 description = "Includes a CSV parser."
 version = "1.0.0"
-license = "MIT"
+license = {file = "LICENSE"}
 
 [project.urls]
 Repository = "https://github.com/hyunxuuu/ComfyUI-HYNode"
-#  Used by Comfy Registry https://registry.comfy.org
 
 [tool.comfy]
 PublisherId = "hyunxuuu"
 DisplayName = "ComfyUI-HYNode"
-Icon = ""
-includes = []
