@@ -67,7 +67,6 @@ app.registerExtension({
                             o.name = data.names[i] ?? `None`;
                         });
                         
-                        this.size = this.computeSize();
                         this.setDirtyCanvas(true, true);
                         app.canvas.draw(true, true);
 
@@ -119,7 +118,6 @@ app.registerExtension({
                                 o.name = data.names[i] ?? `NONE`;
                             });
                     
-                            this.size = this.computeSize();
                             this.setDirtyCanvas(true, true);
                             app.canvas.draw(true, true);
                         }
@@ -168,16 +166,11 @@ app.registerExtension({
                         }
                         widget.value = data.values[data.csv_name_line];
 
-                        this.size = this.computeSize();
-                        this.setDirtyCanvas(true, true);
-                        app.canvas.draw(true, true);
-
                         this.outputs?.forEach((o, i) => {
                             o.label = data.labels[i] ?? `out_${i + 1}`;
                             o.name = data.names[i] ?? `NONE`;
                         });
                         
-                        this.size = this.computeSize();
                         this.setDirtyCanvas(true, true);
                         app.canvas.draw(true, true);
 
